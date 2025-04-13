@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #fff;
+  color: #333;
+}
+
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.skill-bar {
+  margin: 15px auto;
+  width: 80%;
+}
+
+.skill-bar span {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.bar {
+  height: 20px;
+  background: #ccc;
+  border-radius: 10px;
+  position: relative;
+}
+
+.bar.html::after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 90%;
+  background: #f16529;
+  border-radius: 10px;
+}
+
+.bar.css::after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 80%;
+  background: #2965f1;
+  border-radius: 10px;
+}
+
+.bar.js::after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 75%;
+  background: #f0db4f;
+  border-radius: 10px;
+}
+
+form input, form textarea {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  padding: 10px 20px;
+  border: none;
+  background: #333;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+  .skill-bar, form input, form textarea {
+    width: 95%;
+  }
+}
